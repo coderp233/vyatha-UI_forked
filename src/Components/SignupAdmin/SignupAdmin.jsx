@@ -1,52 +1,52 @@
 import React from 'react';
-import './SignupAdmin.scss'
+import styles from './SignupAdmin.module.scss'
 
 
 const SignupAdmin=()=>{
 
     return(
-        <div className="admin-form">
-          <div className="content">
-          <div className="title">Sign up</div>
+        <div className={styles.admin_form}>
+          <div className={styles.content}>
+          <div className={styles.title}>Sign up</div>
         <form>
-          <div className="container">
-      <div className="input-group">
-        <input id='control' type="text" required="required" className="input"/>
-        <label for="control" className="Placeholder">Name</label>
+          <div className={styles.container}>
+      <div className={styles.input_group}>
+        <input type="text" required="required" className={styles.input} id="control"/>
+        <label className={styles.Placeholder} for="control">Name</label>
       </div>
       <br/>
-      <div className="input-group">
-        <input id='control1' type="email" className="input" required="required" />
-        <label for="control1" className="Placeholder">Email</label>
+      <div className={styles.input_group}>
+        <input id='control1' type="email" className={styles.input} required="required"  />
+        <label for="control1" className={styles.Placeholder}>Email</label>
       </div>
       
-      <div className="input-group" >
-      <label for="Designation1" className="input" placeholder="Designation"></label>
-  <select id='Designation1' name="design" className="select_step" style={{width:'326px', height:'40px',position: "relative", top: "-22px"}} >
-  <option value="select" className="Placeholder" >Designation</option>
+      <div className={styles.input_group} >
+      <label for="Designation" className={styles.input} placeholder="Designation"></label>
+  <select name="design" className={styles.select_step} style={{width:'20.375rem', height:'5.41vh',position: "relative", top: "-1.375rem"}} >
+  <option value="select" className={styles.Placeholder} >Designation</option>
   <option value="supervisor">Supervisor</option>
   <option value="warden">Warden</option>
   <option value="dean">Dean</option>
 </select>
       </div>
   
-      <div className="input-group">
-        <input id='control2' type="number" className="input" required="reqired" />
-        <label for="control2" className="Placeholder">Phone</label>
+      <div className={styles.input_group}>
+        <input id="control2" type="number" className={styles.input} required="reqired" />
+        <label className={styles.Placeholder} for="control2">Phone</label>
       </div>
       <br/>
-      <div className="input-group">
-        <input id='control3' type="password" className="input" required="required"/>
-        <label for="control3" className="Placeholder">Password</label>
+      <div className={styles.input_group}>
+        <input id="control3" type="password" className={styles.input} required="required"/>
+        <label for="control3" className={styles.Placeholder}>Password</label>
       </div>
       <br/>
-      <div className="input-group">
-        <input id='control4' type="password" className="input" required="required" />
-        <label for="control4" className="Placeholder">Confirm Password</label>
+      <div className={styles.input_group}>
+        <input id="control4" type="password" className={styles.input} required="required" />
+        <label id="control4" className={styles.Placeholder}>Confirm Password</label>
       </div>
       <br/></div>
-      <div className="submit-btn">
-        <input type="submit" className="sub-btn"/>
+      <div className={styles.submit_btn}>
+        <input type="submit" className={styles.sub_btn}/>
       </div>
       
 </form>
