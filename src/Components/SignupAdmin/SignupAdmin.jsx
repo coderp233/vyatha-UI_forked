@@ -21,7 +21,7 @@ const SignupAdmin=()=>{
       </div>
       
       <div className={styles.input_group} >
-      <label htmlFor="Designation" className={styles.input} placeholder="Designation"></label>
+      <p  className={styles.input} placeholder="Designation"></p>
   <select name="design" className={styles.select_step} style={{width:'20.375rem', height:'5.41vh',position: "relative", top: "-1.375rem"}} >
   <option value="select" className={styles.Placeholder} >Designation</option>
   <option value="supervisor">Supervisor</option>
