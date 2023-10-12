@@ -14,12 +14,12 @@ const SignupAdmin=()=>{
 
       <div className={styles.input_group}>
         <input type="text" required="required" className={styles.input} id="control" placeholder='Name'/>
-        <label className={styles.Placeholder} for="control">Name</label>
+        <label className={styles.Placeholder} htmlFor="control">Name</label>
       </div>
     
       <div className={styles.input_group}>
         <input id='control1' type="email" className={styles.input} required="required" placeholder='Email' />
-        <label for="control1" className={styles.Placeholder}>Email</label>
+        <label htmlFor="control1" className={styles.Placeholder}>Email</label>
       </div>
       
       <div className={styles.input_group} >
@@ -32,22 +32,22 @@ const SignupAdmin=()=>{
   <option value="dean"  >Dean</option>
 
 </select>
-<label For="control5" >Designation</label>
+<label htmlFor="control5" >Designation</label>
       </div>
   
       < div className={styles.input_group}>
         <input id="control2" type="tel" className={styles.input} pattern='[0-9]{5}-[0-9]{5}' placeholder='Phone'  required="reqired" />
-        <label className={styles.Placeholder} for="control2">Phone</label>
+        <label className={styles.Placeholder} htmlFor="control2">Phone</label>
       </div>
       
       <div className={styles.input_group}>
         <input id="control3" type="password" className={styles.input} required="required" placeholder='password'/>
-        <label for="control3" className={styles.Placeholder}>Password</label>
+        <label htmlFor="control3" className={styles.Placeholder}>Password</label>
       </div>
       
       <div className={styles.input_group}>
         <input id="control4" type="password" className={styles.input} required="required" placeholder='confirm'/>
-        <label id="control4" className={styles.Placeholder}>Confirm Password</label>
+        <label htmlFor="control4" className={styles.Placeholder}>Confirm Password</label>
       </div>
       
       </div>
